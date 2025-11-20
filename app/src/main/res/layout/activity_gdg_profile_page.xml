@@ -305,5 +305,5 @@
         app:srcCompat="@drawable/outline_add_24"
         android:backgroundTint="#FF5722"
         app:tint="#FFFFFF"
-        android:contentDescription="Add New Item" />
+        android:contentDescription="Add New Item"/>
 </LinearLayout>
