@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/original_bg"
+    android:padding="12dp"
+    tools:context=".login_acc"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="NamespaceTypo">
+
+    <TextView
+        android:text="GDG"
+        android:textSize="64dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="GDG IIIT Lucknow App"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:background="@drawable/sub_transparent_bg"
+        android:layout_width="380dp"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome Back!"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue!"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:drawableStart="@drawable/outline_mail_24"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:background="@drawable/edit"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:drawableStart="@drawable/outline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:background="@drawable/edit"
+            android:textColorHint="#000000"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:buttonTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+
+            android:paddingLeft="10dp"
+            android:text="Remember Me"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:paddingRight="100dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orange_gradient_floating_button"
+            android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateExistingProfile"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:text="Update Profile"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="1dp"
+            android:textStyle="bold|italic" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="------- or -------"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp" />
+
+            <ImageView
+                android:id="@+id/tweet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Do not have an Account"
+                android:textColor="#CCCCCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/moveToSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/white"
+                android:text="Sign-up"
+                android:textAlignment="center"
+                android:textColor="#622CFD"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginLeft="11dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
